@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ulp.eventapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_crear_evento"
+        android:name="com.ulp.eventapp.ui.organizador.evento.CrearEventoFragment"
+        android:label="Administrar Evento"
+        tools:layout="@layout/fragment_crear_evento" >
+        <action
+            android:id="@+id/action_nav_crear_evento_to_nav_eventos_organizador"
+            app:destination="@id/nav_eventos_organizador" />
+        <action
+            android:id="@+id/action_nav_crear_evento_to_nav_eventos_organizador2"
+            app:destination="@id/nav_eventos_organizador" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_eventos_organizador"
+        android:name="com.ulp.eventapp.ui.organizador.evento.AllEventsFragment"
+        android:label="@string/menu_eventos_organizador"
+        tools:layout="@layout/fragment_all_events" >
+        <action
+            android:id="@+id/action_nav_eventos_organizador_to_nav_crear_evento"
+            app:destination="@id/nav_crear_evento" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_participacion"
+        android:name="com.ulp.eventapp.ui.organizador.participacion.ParticipacionFragment"
+        android:label="Inscripciones"
+        tools:layout="@layout/fragment_participacion" />
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.ulp.eventapp.ui.organizador.usuario.UsuarioFragment"
+        android:label="Gestionar usuarios"
+        tools:layout="@layout/fragment_usuario" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.ulp.eventapp.ui.perfil.PerfilFragment"
+        android:label="Mi Perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_eventos_list"
+        android:name="com.ulp.eventapp.ui.usuario.evento.EventoListFragment"
+        android:label="Próximos Eventos"
+        tools:layout="@layout/fragment_evento_list" />
+    <fragment
+        android:id="@+id/eventoFragment"
+        android:name="com.ulp.eventapp.ui.usuario.evento.EventoFragment"
+        android:label="EventoFragment" />
+    <fragment
+        android:id="@+id/nav_certificados"
+        android:name="com.ulp.eventapp.ui.usuario.certificado.CertificadoFragment"
+        android:label="Certificados"
+        tools:layout="@layout/fragment_certificado" />
+    <fragment
+        android:id="@+id/nav_mis_eventos"
+        android:name="com.ulp.eventapp.ui.usuario.evento.MisEventosFragment"
+        android:label="Eventos inscriptos"
+        tools:layout="@layout/fragment_mis_eventos" />
+</navigation>

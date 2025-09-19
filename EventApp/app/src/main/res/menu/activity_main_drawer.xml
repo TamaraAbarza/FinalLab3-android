@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+
+
+        <item
+            android:id="@+id/nav_eventos_organizador"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_eventos_organizador" />
+
+        <item
+            android:id="@+id/nav_crear_evento"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_crear_evento" />
+
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Gestionar usuarios" />
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mi perfil" />
+
+
+        <item
+            android:id="@+id/nav_eventos_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Proximos eventos(user)" />
+
+        <item
+            android:id="@+id/nav_certificados"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mis certificados" />
+
+        <item
+            android:id="@+id/nav_mis_eventos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mis inscripciones" />
+
+
+
+    </group>
+</menu>

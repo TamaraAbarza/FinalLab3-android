@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Avatar circular -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/bg_circle"
+            android:padding="2dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <!-- Info del usuario -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/tvNameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sophia Clark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvEmailUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sophia@example.com"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Estado -->
+            <TextView
+                android:id="@+id/tvStatusUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- Switch -->
+        <Switch
+            android:id="@+id/switchConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="#E91E63"
+            android:trackTint="#F8BBD0"
+            android:focusable="false"
+            android:clickable="true"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

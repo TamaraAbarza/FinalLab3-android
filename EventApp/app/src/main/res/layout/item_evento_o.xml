@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="top">
+
+    <!-- Columna izquierda -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Nombre del evento -->
+        <TextView
+            android:id="@+id/tvNombreE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tech Conference 2024"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <!-- Fecha -->
+        <TextView
+            android:id="@+id/tvFechaE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jul 15, 2024"
+            android:textColor="#E53935"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Botón principal: Ver inscripciones -->
+        <Button
+            android:id="@+id/btnInscripcionesE"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Ver inscripciones"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9C27B0"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="20dp" />
+
+        <!-- Fila secundaria de botones -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <!-- Modificar -->
+            <Button
+                android:id="@+id/btnModificarE"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Modificar"
+                android:textAllCaps="false"
+                android:textColor="#C2185B"
+                android:backgroundTint="#F8E1E9"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="20dp" />
+
+            <!-- Eliminar -->
+            <Button
+                android:id="@+id/btnEliminarE"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Eliminar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#E53935"
+                android:paddingHorizontal="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Imagen derecha -->
+    <ImageView
+        android:id="@+id/ivFotoE"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_image_rounded"
+        android:src="@drawable/ic_launcher_background"/>
+</LinearLayout>
+
+
+

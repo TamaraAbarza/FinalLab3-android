@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_eventos_list"
+            android:icon="@drawable/calendar"
+            android:title="Proximos eventos" />
+
+        <item
+            android:id="@+id/nav_certificados"
+            android:icon="@drawable/certificado"
+            android:title="Mis certificados" />
+
+        <item
+            android:id="@+id/nav_mis_eventos"
+            android:icon="@drawable/hacer"
+            android:title="Mis inscripciones" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Cerrar sesión" />
+
+
+    </group>
+</menu>

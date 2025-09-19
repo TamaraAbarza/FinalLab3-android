@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Red (acentos) -->
+    <color name="md_red_600">#E53935</color>
+    <color name="md_red_700">#D32F2F</color>
+
+    <!-- Rose (fondos suaves) -->
+    <color name="rose_50">#FFF1F2</color>
+    <color name="rose_100">#FBE9EC</color>  <!-- suave como la captura -->
+    <color name="rose_200">#F4DDE2</color>
+
+    <!-- Neutros -->
+    <color name="drawer_bg">#FCF8F9</color>   <!-- fondo del panel -->
+    <color name="text_default">#2B2B2B</color>
+    <color name="text_muted">#6B6B6B</color>
+    <color name="icon_default">#6B6B6B</color>
+</resources>
